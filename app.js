@@ -11,7 +11,9 @@ var index = require('./routes/index');
 
 var app = express();
 
-mongoose.connect('localhost:27017/shopping');
+//mongoose.connect('localhost:27017/shopping');
+mongoose.connect('mongodb://admin:11111@ds133378.mlab.com:33378/nodestudy-db');
+
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout:'layout',extname:'.hbs'}));
 app.set('view engine', '.hbs');
